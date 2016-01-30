@@ -1,0 +1,70 @@
+
+
+
+body {
+  background-color: #eeeded;
+  height: 100%;
+}
+
+.navbar {
+  margin-top: 5vh;
+  height: 56px;
+}
+
+#layoutcontainer {
+  padding: 0px;
+  margin-top: 39px;
+}
+
+#maincontainer {
+  /*padding-top: 17px;*/
+  height: 100vh;
+  margin-top: 4vh;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+
+#registerpage {
+  margin-top: 29px;
+}
+
+.transheader {
+  background-color: rgba(255, 255, 255, 0.79);
+  padding-top: 17px;
+  color: rgb(68, 68, 68);
+  padding: 11px;
+}
+
+.transheader h1 {
+  font-size: 2em;
+  margin-bottom: 0;
+  margin-top: 24px;
+  font-weight: lighter;
+}
+
+.pagecontent {
+  background-color: white;
+  height: 80vh;
+  overflow: hidden;
+}
+
+#large-header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #b6b6b6;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  /* display: inline; */
+  /* z-index: 1; */
+}
+
+#demo-canvas {
+  position: absolute;
+}
+
+#fullpagecontain {
+  position: relative;
+  /* display: block; */
+  z-index: 2;
+}

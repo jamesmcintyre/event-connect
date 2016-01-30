@@ -1,0 +1,25 @@
+extends layout
+
+block content
+
+  .col-sm-12#maincontainer
+    .row.transheader
+      h1 Register
+    .row.pagecontent
+      .col-sm-12#registerpage
+        .col-sm-6
+          form
+            .form-group
+              label(for='email') Email address
+              input#email.form-control(type='email', placeholder='Email')
+            .form-group
+              label(for='password') Password
+              input#password.password.form-control(type='password', placeholder='Password')
+            .form-group
+              label(for='password2') Password (again)
+              input#password2.password.form-control(type='password', placeholder='Password')
+            button.btn.btn-default(type='submit') Register
+
+    block scripts
+      script(src="/js/register.js")
+  
