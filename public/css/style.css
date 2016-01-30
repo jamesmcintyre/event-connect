@@ -9,6 +9,8 @@ body {
 .navbar {
   margin-top: 5vh;
   height: 56px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 #layoutcontainer {

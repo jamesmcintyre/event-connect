@@ -14,7 +14,22 @@ var userSchema = new mongoose.Schema({
       profile_img: String,
       profile_url: String,
     },
-  ]
+  ],
+  name: {first: String, last: String},
+  websites: [{url: String}],
+  age: Number,
+  ageRange: String,
+  gender: String,
+  location: String,
+  locationLikelihood: Number,
+  scores: [{provider: String, value: Number}],
+  likelihood: Number,
+  photos: [{type: String, url: String}],
+  profiles: [{type: String, url: String}],
+  currentLocationLat: String,
+  hasFullContact: Boolean,
+  email: String
+
 });
 
 // instance method

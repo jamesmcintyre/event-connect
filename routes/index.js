@@ -2,21 +2,23 @@ var express = require('express');
 var router = express.Router();
 
 var authMiddleware = require('../config/auth');
+var authStatusMiddleware = require('../config/auth2');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', req.user);
+router.get('/', authStatusMiddleware, function(req, res, next) {
+  console.log('ssdfsf:  ',{user: req.user});
+  res.render('index', {title: 'Event Shadow', user: req.user});
     //TODO pull from mongo user document loggin status
 
 
 });
 
-router.get('/login', function(req, res, next) {
-  res.render('login');
+router.get('/login', authStatusMiddleware, function(req, res, next) {
+  res.render('login',  {user: req.user});
 });
 
-router.get('/register', function(req, res, next) {
-  res.render('register');
+router.get('/register', authStatusMiddleware, function(req, res, next) {
+  res.render('register',  {user: req.user, page: 'register'});
 });
 
 router.get('/secret', authMiddleware, function(req, res, next) {
