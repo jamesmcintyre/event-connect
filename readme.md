@@ -1,10 +1,3 @@
-# Auth Starter Pack
+# Group Connect
 
-To begin enter `npm run setup`.  This will install all dependencies.
-
-Then, set your environment variable, by entering `export JWT_SECRET='anything you want'`
-Be sure to enter your Firebase address in routes/users.js
-
-NOTE:  Be sure to enter this in the same terminal window that you are running your server.
-
-After all that, you can start your server with `npm start` or `nodemon`.
+Work in progress. The concept is that an event would be detected by a spike in twitter posts sharing a hashtag that are clustered geographically. Once detected a Twitter bot would @ reply to continued posts with this hashtag inviting event attendees to bookmark that events "connect" page in which attendees share profile information for future reference and networking. A kind of "missed connections" for events.
